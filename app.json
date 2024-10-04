@@ -2,6 +2,7 @@
   "expo": {
     "name": "plantly",
     "slug": "plantly",
+    "scheme": "plantly",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anshpatel.plantly"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +24,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "281801f8-fb28-4258-a10f-11892c6ea2c7"
+      }
+    },
+    "owner": "anshpatel"
   }
 }
